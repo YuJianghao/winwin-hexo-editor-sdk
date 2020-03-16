@@ -12,7 +12,7 @@ const debug = require('debug')('hexo-editor-server/sdk')
  * @param {Axios} opts.axios - axios instance
  * @returns {Object} - sdk object
  */
-export default function (opts) {
+function factory (opts) {
   if (!opts.axios) throw new Error('opts.axios instance is required')
   if (!opts.baseUrl) throw new Error('opts.baseUrl is required')
 
@@ -30,6 +30,9 @@ export default function (opts) {
 
   // sdk
   const hexo = {
+    hello: async () => {
+      return request.get(fullUrl('/'))
+    },
     getCategories: async () => {
       return request.get(fullUrl('/categories'))
     },
@@ -86,3 +89,5 @@ export default function (opts) {
   }
   return hexo
 }
+
+module.exports = factory.default = factory
