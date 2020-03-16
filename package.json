@@ -1,0 +1,17 @@
+{
+  "name": "@winwin/hexo-editor-sdk",
+  "version": "0.0.1",
+  "description": "A SDK for hexo-editor-server/hexo-editor-client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sdk",
+    "hexo",
+    "markdown",
+    "editor"
+  ],
+  "author": "winwin2011",
+  "license": "MIT"
+}
