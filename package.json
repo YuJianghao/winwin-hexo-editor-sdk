@@ -1,6 +1,6 @@
 {
   "name": "@winwin/hexo-editor-sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A SDK for hexo-editor-server/hexo-editor-client",
   "main": "index.js",
   "scripts": {
