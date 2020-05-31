@@ -83,6 +83,13 @@ function factory (opts) {
     clean: async () => {
       return hexo._action('clean')
     },
+    search: async (q, size) => {
+      if (size) {
+        return request.get(fullUrl(`/search?q=${q}&size=${size}`))
+      } else {
+        return request.get(fullUrl(`/search?q=${q}`))
+      }
+    },
     _action: async (name) => {
       return request.post(fullUrl('/' + name))
     }
