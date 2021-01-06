@@ -26,7 +26,7 @@
     "url": "https://github.com/YuJianghao/winwin-hexo-editor-sdk/issues"
   },
   "devDependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-friendly-formatter": "^4.0.1",
